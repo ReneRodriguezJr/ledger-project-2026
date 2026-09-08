@@ -1,12 +1,6 @@
 # ledger-project-2026
 A from-scratch database storage system built using **Ada** and **SPARK**.
 
-## Team
-Memeber                Responsibility
-- Rene Rodriguez
-- Ruth Velasquez
-- Niyaz Nassyrov
-
 ## Project Description
 
 This project implements a database storage engine centered around two fundamental concepts: a write-ahead log (WAL) and a B-tree index.
@@ -75,6 +69,15 @@ Intentionally interrupts the system at persistent-state transitions to test reco
 ### Formal Verification
 
 Uses SPARK to specify and verify critical properties of the implementation, with verification results documented rather than assumed.
+
+## Team
+
+| Member | Responsibility |
+| ------ | -------------- |
+| Rene Rodriguez    | TBD            |
+| Ruth Velasquez    | TBD            |
+| Niyaz Nassyrov    | TBD            |
+| TBD    | TBD            |
 
 ## Project Structure
 
