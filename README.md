@@ -75,7 +75,7 @@ Uses SPARK to specify and verify critical properties of the implementation, with
 
 | Member | Responsibility |
 | ------ | -------------- |
-| Rene Rodriguez    | TBD            |
+| Rene Rodriguez    | Crash Testing & Recovery |
 | Ruth Velasquez    | TBD            |
 | Niyaz Nassyrov    | TBD            |
 | TBD    | TBD            |
