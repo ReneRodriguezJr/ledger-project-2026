@@ -1,0 +1,14 @@
+name = "hello_ledger"
+description = "test ledger"
+version = "0.1.0-dev"
+
+authors = ["tester"]
+maintainers = ["tester <example@example.com>"]
+licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
+website = ""
+tags = []
+
+executables = ["hello_ledger"]
+
+[[depends-on]]
+gnatprove = "^16.1.0"
