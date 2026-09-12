@@ -1,14 +1,14 @@
-name = "hello_ledger"
-description = "test ledger"
+name = "ledger"
+description = "Crash-safe storage engine in Ada and SPARK"
 version = "0.1.0-dev"
 
-authors = ["tester"]
-maintainers = ["tester <example@example.com>"]
+authors = ["Ledger Team"]
+maintainers = ["Ledger Team <rene.rodriguez7624@gmail.com>"]
 licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
 website = ""
 tags = []
 
-executables = ["hello_ledger"]
+executables = ["ledger"]
 
 [[depends-on]]
 gnatprove = "^16.1.0"
