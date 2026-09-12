@@ -1,14 +1,14 @@
-with "config/hello_ledger_config.gpr";
-project Hello_Ledger is
+with "config/ledger_config.gpr";
+project Ledger is
 
    for Source_Dirs use ("src/", "config/");
-   for Object_Dir use "obj/" & Hello_Ledger_Config.Build_Profile;
+   for Object_Dir use "obj/" & Ledger_Config.Build_Profile;
    for Create_Missing_Dirs use "True";
    for Exec_Dir use "bin";
-   for Main use ("hello_ledger.adb");
+   for Main use ("ledger.adb");
 
    package Compiler is
-      for Default_Switches ("Ada") use Hello_Ledger_Config.Ada_Compiler_Switches;
+      for Default_Switches ("Ada") use Ledger_Config.Ada_Compiler_Switches;
    end Compiler;
 
    package Binder is
@@ -19,4 +19,4 @@ project Hello_Ledger is
       for Artifacts (".") use ("share");
    end Install;
 
-end Hello_Ledger;
+end Ledger;
