@@ -2,6 +2,29 @@
 
 A from-scratch database storage system built using **Ada** and **SPARK**.
 
+## Current learning milestone: one crash and one recovered record
+
+The runnable starter uses a temporary one-record WAL/storage demo. The team's
+real WAL and storage components are not implemented yet. The original broader
+project goals below describe the intended system, not completed features.
+
+From PowerShell in the folder containing `alire.toml`:
+
+```powershell
+alr build
+alr exec -- powershell -NoProfile -ExecutionPolicy Bypass -File .\tests\crash_recovery.ps1
+```
+
+The test writes one record, forcibly kills Ledger after closing the WAL and
+before updating storage, restarts Ledger to replay, and checks the recovered
+storage against an independent expected value. It prints PASS/FAIL and keeps
+evidence in a new `test-output/` subfolder on every run.
+
+Read [the first-test walkthrough](docs/crash-recovery-first-test.md) for the
+code explanation, Windows steps, limits, and teammate integration points.
+This is a process-crash demonstration, not a power-loss durability guarantee
+or a SPARK proof.
+
 ## Project Description
 
 This project implements a database storage engine centered around two fundamental concepts: a **write-ahead log (WAL)** and a **B-tree index**.
