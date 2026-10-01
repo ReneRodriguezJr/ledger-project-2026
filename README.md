@@ -100,7 +100,8 @@ Uses SPARK to specify and verify critical properties of the implementation, with
 | ------ | -------------- |
 | Rene Rodriguez    | Crash Testing & Recovery |
 | Ruth Velasquez    | Write-ahead log |
-| Niyaz Nassyrov    | B-tree / storage engine |
+| Andrew Baez    | B-tree / storage engine |
+| Annette Garcia    | SPARK / integration |
 
 ## Project Structure
 
